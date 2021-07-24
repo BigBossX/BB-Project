@@ -7,13 +7,20 @@
     <title>Calculator Berat Badan</title>
   </head>
   <body>
-    <form>
-      <label for="berat">Berat:</label>
-      <input type="text" id="berat" />
-      <label for="tinggi">Tinggi</label>
-      <input type="text" id="tinggi" />
-      <button>Hitung!</button>
-    </form>
+    <div class="container">
+      <div class="tinggi">
+        <label for="tinggi">Tinggi: </label>
+        <input type="input" id="tinggi" autofocus />
+        <span>CM</span>
+      </div>
+      <div class="jenis">
+        <select name="gender" id="gender">
+          <option value="pria">Laki - laki</option>
+          <option value="perempuan">Perempuan</option>
+        </select>
+      </div>
+      <button class="btn">Hitung!</button>
+    </div>
     <script type="module" src="main.js"></script>
   </body>
 </html>
