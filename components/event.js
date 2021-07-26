@@ -6,7 +6,7 @@ const buildContainer = () => {
 
 const buildResult = (checked) => {
   const hasil = document.createElement('p');
-  hasil.textContent = `${checked} kg`;
+  hasil.textContent = checked;
   return hasil;
 };
 
