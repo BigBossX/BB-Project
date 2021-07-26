@@ -1,5 +1,5 @@
-import checkGender from './calculate.js';
-import eventListen from './event.js';
+import checkGender from './calculate';
+import eventListen from './event';
 
 const gender = document.getElementById('gender');
 const tinggi = document.getElementById('tinggi');
