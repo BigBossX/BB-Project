@@ -1,21 +1,22 @@
-import checkGender from './components/calculate.js';
-import eventListen from './components/event.js';
+import checkGender from './calculate.js';
+import eventListen from './event.js';
 
-const gender = document.getElementById('gender').value;
+const gender = document.getElementById('gender');
 const tinggi = document.getElementById('tinggi');
 const btn = document.querySelector('.btn');
 const body = document.body;
 
 const checked = checkGender;
-const valueTinggi = tinggi.value;
 
 tinggi.addEventListener('keyup', (e) => {
   if (e.key === 'Enter') btn.click();
 });
 
 btn.addEventListener('click', () => {
+  const valueTinggi = tinggi.value;
+  const valueGender = gender.value;
   if (body.lastChild.className === 'hasil') {
     body.removeChild(body.lastChild);
   }
-  body.appendChild(eventListen(checked(gender, valueTinggi)));
+  body.appendChild(eventListen(checked(valueGender, valueTinggi)));
 });
