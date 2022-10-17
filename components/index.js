@@ -1,5 +1,5 @@
-import checkGender from './calculate';
-import eventListen from './event';
+import checkGender from './calculate.js';
+import eventListen from './event.js';
 
 const gender = document.getElementById('gender');
 const tinggi = document.getElementById('tinggi');
@@ -8,7 +8,7 @@ const body = document.body;
 
 const checked = checkGender;
 
-tinggi.addEventListener('keyup', (e) => {
+tinggi.addEventListener('keyup', e => {
   if (e.key === 'Enter') btn.click();
 });
 
